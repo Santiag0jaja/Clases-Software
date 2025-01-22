@@ -4,6 +4,3 @@ Aqui se encontrarán todos aquellos archivos que realice en clase, como forma de
 
 ---
 
-## 📂 Estructura del Repositorio
-
-En lo posible, estaran ordenados por fecha de creacion/clase.
