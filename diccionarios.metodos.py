@@ -1,3 +1,5 @@
+import pprint
+
 """ Diccionarios en python y sus metodos """
 
 dvacio: dict = {}
@@ -62,4 +64,64 @@ print(a_concatenar["nombre"])
 print("antes", copia_a)
 copia_a.update(a_concatenar)
 print("despues", copia_a)
+
+""" Metodos de concatenar utilizando metodos de ** o"""
+"""KEY ARCS / KARGS:"""
+"""ARGS:"""
+
+dic_concat_kargt: dict = {**copia_b, **a_concatenar}
+print(dic_concat_kargt)
+
+"""Metodo Popitem: Nos devuelve el item que elimina"""
+
+llave, valor = dic_concat_kargt.popitem()
+print("Llave eliminada: ", llave, " Valor eliminado de la llave: ", valor)
+print(dic_concat_kargt)
+
+"""Metodo Clear: nos elimina todos los valores del dict"""
+print("Antes: ", dic_concat_kargt)
+dic_concat_kargt.clear()
+print("Despues uwu: ", dic_concat_kargt)
+
+
+dict_datos_per: dict = {}
+dict_datos_per = {
+    "nombre": "pepito",
+    "apellidos": "perez",
+    "estado_civil": "soltero",
+    "fecha_nacimiento": "01/01/2000",
+    "genero": "masculino",
+    "tipo_sangre": {
+        "rh": "+",
+        "grupo_sanguineo": "AB"
+    }
+
+}
+
+pprint.pprint(dict_datos_per)
+
+datos_contacto = {
+    "nombre": "Juan Pérez",
+    "edad": 25,
+    "email": "juan.perez@example.com",
+    "teléfono": "+57 312 345 6789",
+    "dirección": {
+        "calle": "Calle 123",
+        "ciudad": "Medellín",
+        "país": "Colombia"
+    },
+    "redes_sociales": {
+        "Instagram": "@juanperez",
+        "Twitter": "@jperez"
+    }
+}
+
+dict_datos_per["datos de contacto"] = datos_contacto
+pprint.pprint(dict_datos_per)
+print("LLegando a niveles: ", dict_datos_per["datos de contacto"]["dirección"]["calle"])
+
+dict_cedula: dict = {}
+dict_cedula["12345678"] = dict_datos_per
+pprint.pprint(dict_cedula)
+
 
