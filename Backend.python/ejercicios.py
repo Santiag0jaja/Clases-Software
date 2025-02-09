@@ -3,7 +3,7 @@
 """
 
 cadena_str: str = "El curso de Backend con Python es una belleza!!"
-
+"""
 print(cadena_str[12:19])
 
 mensaje: str = 'Este es un mensaje en comillas simples'
@@ -43,3 +43,5 @@ print(direccion)  # Salida: Calle Falsa 123
 
 fine: bool = 1
 print(fine)
+
+"""
