@@ -1,5 +1,5 @@
 """
-    Ejercicios y pruebas
+    Ejercicios, pruebas y demas
 """
 
 cadena_str: str = "El curso de Backend con Python es una belleza!!"
@@ -45,3 +45,7 @@ fine: bool = 1
 print(fine)
 
 """
+
+
+ # Ana_Sofia: str = "Huevona"
+# print(Ana_Sofia.center(60, " ") * 600)
