@@ -91,7 +91,8 @@ resultado_2 = [ (letra, letra * 5) for letra in texto[:10] if letra != "."]
 print(resultado_2)
 
 # for comprehension anidado
-resultado_3 = [ f"{numero_1} x {numero_2} = {numero_1 * numero_2}" for numero_1 in range(1,11) for numero_2 in range(1,11)]
+resultado_3 = [ f"{numero_1} x {numero_2} = {numero_1 * numero_2}" for numero_1 in range(1,11)
+                for numero_2 in range(1,11)]
 print(resultado_3)
 
 # Ciclo for usado para iterar un diccionario
