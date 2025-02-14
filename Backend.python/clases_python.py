@@ -216,6 +216,73 @@ class AccountBank:
 # las variables públicas y semi se pueden trabajar dentro de la clase o fuera
 print("*" * 50)
 accounBanc = AccountBank()
-print(accounBanc.bank)
-print(accounBanc._level)
-print(accounBanc.__taxes)
+#print(accounBanc.bank)
+#print(accounBanc._level)
+#print(accounBanc.__taxes)
+
+"""
+    Inyectando funcion
+"""
+setattr(AccountBank, "x", lambda x,y: x + y)
+print(AccountBank.__dict__)
+print(AccountBank.x(5,6))
+
+#   No funciona 
+#       accounBanc.x(5,6)
+
+# Uso interno de atributos (Variables) de una clase 
+class AccountBankV2:
+    bank: str = "CursoBackend"
+    _level: int = 3
+    __taxes: float = 0.34
+
+
+    def perform_taxes(self, amount: int):
+        print(f"calculating data for: {self.bank}, level {self._level}")
+        return round(amount * self.__taxes, 2)
+
+atributos_internos = AccountBankV2()
+print(atributos_internos.perform_taxes(100000))
+
+"""
+    Funcion constructor de la clase en Python 
+    Punto de entrada para computar y realizar acciones antes de que devuelva la instancia del objeto
+    Un constructor es una funcion, es decir que se le pueden aplicar todos los trucos que vimos en funciones
+
+    Siempre el contador va con __init__
+"""
+print("----" * 20)
+class Persona():
+    id: str
+    nombre: str
+    edad: int
+
+persona_1 = Persona()
+persona_1.id = "111"
+persona_1.nombre = "Pepito"
+persona_1.edad = 12
+
+persona_2 = Persona() 
+persona_2.id = "222222"
+persona_2.nombre = "Julanito"
+persona_2.edad = 25
+
+usuarios: list = [persona_1, persona_2]
+print(usuarios[1].id)
+print("----" * 20)
+
+class PersonaV2():
+    def __init__(self, id, nombre: str, edad: int, taxes: float = 0.002):
+        self.id: str = id 
+        self.nombre: str = nombre 
+        self.edad: int = edad
+        self.__taxes: float = taxes
+
+persona = PersonaV2("112588", "Santiago Diaz", 17)
+print("Id de persona: ", persona.id)
+print(persona.__dict__)
+print("----" * 20)
+usuarioV2 = [PersonaV2("111", "pepito", 12), PersonaV2("2222", "juanito", 25)]
+print(usuarioV2[1].id)
+
+
