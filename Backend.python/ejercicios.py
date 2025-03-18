@@ -49,3 +49,8 @@ print(fine)
 
  # Ana_Sofia: str = "Huevona"
 # print(Ana_Sofia.center(60, " ") * 600)
+from datetime import date, datetime, timedelta
+
+#fechaaa = datetime.today()
+
+#print(fechaaa.weekday)

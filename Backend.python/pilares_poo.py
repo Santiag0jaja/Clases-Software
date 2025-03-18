@@ -103,3 +103,5 @@ print(cuadrado.area())  # Salida: 25
 
 #           Figura es una clase abstracta que define un método abstracto area.
 #           Cuadrado implementa el método area, proporcionando la funcionalidad concreta.
+
+
