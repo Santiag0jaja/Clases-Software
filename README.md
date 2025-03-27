@@ -27,7 +27,7 @@
 
 ###  **Extras para destacar**:   
 
-   ![Code Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajBseDhxaGNtODl0cHJ4Ym52c2owZXF4eTVqeTZ2d3NsYW5sOXNlcyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oEjI1erPMTMBFmNHi/giphy.gif)
+   ![Code Demo](https://media.giphy.com/media/l46CtSZN75aR6meE8/giphy.gif?cid=790b7611j7qmewi8rhdq0qq6r7ppipajj84l3qwu9pgd9id4&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 ---
 
