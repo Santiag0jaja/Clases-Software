@@ -9,6 +9,9 @@ print(cadena_str[12:19])
 mensaje: str = 'Este es un mensaje en comillas simples'
 print(mensaje)
 
+
+
+
 dict = {
     "cedula": "123456789",
     "datos personales": {
@@ -54,3 +57,5 @@ from datetime import date, datetime, timedelta
 #fechaaa = datetime.today()
 
 #print(fechaaa.weekday)
+
+print("Jan te amo ".center(60, " ") * 600)
