@@ -1,0 +1,23 @@
+Algoritmo vectorarreglo
+	Definir n, i, j, aux Como Entero
+	Escribir "Ingrese el tamaño del vector:"
+	Leer n
+	Dimension vector[n]
+	Para i <- 1 Hasta n Hacer
+		Escribir "Ingrese el elemento ", i, ":"
+		Leer vector[i]
+	Fin Para
+	Para i <- 1 Hasta n-1 Hacer
+		Para j <- 1 Hasta n-i Hacer
+			Si vector[j] > vector[j+1] Entonces
+				aux <- vector[j]
+				vector[j] <- vector[j+1]
+				vector[j+1] <- aux
+			Fin Si
+		Fin Para
+	Fin Para
+	Escribir "El vector ordenado de menor a mayor es:"
+	Para i <- 1 Hasta n Hacer
+		Escribir vector[i]
+	Fin Para
+FinAlgoritmo

@@ -1,0 +1,30 @@
+Algoritmo tipado_de_datos
+	mayoria_edad <- 18;
+	estatura_promedio <- 1.65;
+	sexo_hombre <- "M"; 
+	sexo_mujer <- "F";
+	Definir nombre_user Como Caracter;
+	Definir edad Como Entero;
+	Definir estatura Como Real;
+	Definir sexo Como Caracter;
+	Definir adulto, hombre, mujer, alto Como Logico;
+	Escribir "Ingrese su nombre y apellidos:";
+	Leer nombre_user;
+	Escribir "Ingrese su estatura en metros (ejemplo: 1.65): ";
+	Leer estatura;
+	Escribir "Ingrese su sexo (F para mujer, M para hombre): ";
+	Leer sexo;
+	Escribir "Ingrese su edad: ";
+	Leer edad;
+	adulto <- edad > mayoria_edad;
+	hombre <- sexo = sexo_hombre;
+	mujer <- sexo = sexo_mujer;
+	alto <- estatura > estatura_promedio;
+	Escribir "Hola, bienvenid@ a clase ", nombre_user; 
+	Escribir "Tu edad es: ", edad;
+	Escribir "¿eres mayor de edad? ", adulto;
+	Escribir "¿Eres una persona alta? ", alto; 
+	Escribir "¿Eres hombre? ", hombre;
+	Escribir "¿Eres mujer? ", mujer; 
+	Escribir "Hasta luego, ", nombre_user; 
+FinAlgoritmo

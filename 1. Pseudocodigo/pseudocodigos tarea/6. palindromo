@@ -1,0 +1,15 @@
+Algoritmo palindromo
+		Escribir "Ingrese una palabra para verificar si es un palíndromo:"
+		Leer palabra
+		esPalindromo <- Verdadero
+		Para i <- 1 Hasta longitud(palabra) / 2 Hacer
+			Si Subcadena(palabra, i, i) <> Subcadena(palabra, longitud(palabra) - i + 1, longitud(palabra) - i + 1) Entonces
+				esPalindromo <- Falso
+			Fin Si
+		Fin Para
+		Si esPalindromo Entonces
+			Escribir "La palabra es un palíndromo"
+		SiNo
+			Escribir "La palabra no es un palíndromo"
+		Fin Si
+FinAlgoritmo
